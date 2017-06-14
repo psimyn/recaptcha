@@ -74,7 +74,7 @@ Some of the options available:
 | :size       | Specify a size (default `nil`)|
 | :hl         | Optional. Forces the widget to render in a specific language. Auto-detects the user's language if unspecified. (See [language codes](https://developers.google.com/recaptcha/docs/language)) |
 | :id         | Specify an html id attribute (default `nil`)|
-| :script     | If you do not need to add a script tag by helper you can set the option to false. It's necessary when you add a script tag manualy (default `true`)|
+| :script     | If you do not need to add a script tag by helper you can set the option to false. It's necessary when you add a script tag manually (default `true`)|
 
 You can also override the html attributes for the sizes of the generated `textarea` and `iframe`
 elements, if CSS isn't your thing. Inspect the source of `recaptcha_tags` to see these options.
@@ -82,7 +82,7 @@ elements, if CSS isn't your thing. Inspect the source of `recaptcha_tags` to see
 ## verify_recaptcha
 
 This method returns `true` or `false` after processing the parameters from the reCAPTCHA widget. Why
-isn't this a model validation? Because that violates MVC. You can use it like this, or how ever you
+isn't this a model validation? Because that violates MVC. You can use it like this, or however you
 like. Passing in the ActiveRecord object is optional, if you do--and the captcha fails to verify--an
 error will be added to the object for you to use.
 
